@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    user-select: none;
+    color: black;
+}
+
+ul, li{
+    list-style: none;
+}
+
+#fundo-top{
+    background-color: rgb(141, 141, 141);
+}
+
+#ul-top li{
+    float: left;
+    padding: 20px;
+    margin: 2px;
+}
+
+#ul-top{
+    display: inline-block;
+    height: 66.4px;
+}
+
+.li-top{
+    display: block;
+    padding: 2px 3px 2px 3px;
+    
+}
+
+.li-topv1{
+    float: left;
+    height: 27px;
+    width: auto;
+}
+
+.li-topv1:hover{
+    border-bottom: solid 2px white;
+}
+
+.navcontrol{
+    text-align: end;
+    margin-right: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    font-size: 1.07rem;
+}
+
+.li-top:hover{
+    color: aliceblue;
+    
+}
+
+#lembracaslogo{
+    width: 4.5%;
+    height: 4.5%;
+    float: left;
+    margin-left: 1.3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.alt{
+    border-bottom: solid 2px #c8c8c8;
+    float: left;
+    height: 27px;
+    width: auto;
+}
+
+.alter{
+    color: #c8c8c8;
+    display: block;
+    padding: 2px 3px 2px 3px;
+    cursor: default;
+}
+
+.fundo{
+    margin-left: 20%;
+    margin-top: 1.5%;
+    position: absolute;
+}
+
+body{
+    background-color: #c8c8c8;
+}
+
+
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    }
+    
+    .confetti {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    animation: jump 2s linear infinite;
+    display: none;
+    }
+    
+    @keyframes jump {
+    0% {
+    top: 0;
+    left: 0;
+    }
+    100% {
+    top: calc(100vh - 10px);
+    left: calc(100% - 10px);
+    }
+    }
