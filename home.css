@@ -4,6 +4,7 @@
 * {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 a{
@@ -96,29 +97,54 @@ body{
 
 
 
-.container {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    }
-    
-    .confetti {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
+#button{
     position: absolute;
-    animation: jump 2s linear infinite;
-    display: none;
-    }
-    
-    @keyframes jump {
-    0% {
+    margin-left: 46%;
+    margin-top: 15%;
+}
+
+#confetti-container {
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .confetti {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    animation: confetti-fall 3s linear infinite;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  
+  @keyframes confetti-fall {
+    from {
+      transform: translateY(0);
     }
-    100% {
-    top: calc(100vh - 10px);
-    left: calc(100% - 10px);
+    to {
+      transform: translateY(100%) rotate(360deg);
     }
-    }
+  }
+
+  .pink-btn {
+    background-color: #ff69b4;
+    border: 0.1px solid #000000;
+    border-radius: 10px;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+
+  }
+  
+  .pink-btn:hover {
+    background-color: #ff1493;
+    cursor: pointer;
+  }
+
+  
+  
