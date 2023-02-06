@@ -176,12 +176,3 @@ img{
     padding: 2px 3px 2px 3px;
     cursor: default;
 }
-
-@media screen and (max-width: 1010px) {
-    .borda{
-        background-color: red;
-        counter-increment: none;
-        
-    }
-}
-
